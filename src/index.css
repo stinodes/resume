@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Fira Sans", sans-serif;
+    --font-mono: "Fira Code", monospace;
+}
+
+@layer base {
+    html {
+        print-color-adjust: exact;
+    }
+
+    body {
+        padding: 0;
+    }
+}
+
+#root {
+    height: 100vh;
+}
