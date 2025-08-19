@@ -1,4 +1,4 @@
-import { HistoryItem as HistoryItemType } from "./history";
+import { HistoryItem as HistoryItemType } from "./data";
 import { TagsSelector } from "./TagsSelector";
 export const HistoryItem = (props: {
   item: HistoryItemType;
@@ -16,13 +16,13 @@ export const HistoryItem = (props: {
     <div class="flex flex-col border-slate-500 py-6 gap-2 print:break-inside-avoid">
       <h3 class="text-slate-900 text-xl font-bold font-sans">
         {item.company}
-        <span class="text-gray-500 text-lg font-medium">
+        <span class="text-slate-400 text-lg font-medium">
           {" "}
           - {item.position}
         </span>
       </h3>
 
-      <p class="text-slate-500 text-md">
+      <p class="text-slate-400">
         {item.start === item.end
           ? item.start
           : [item.start, item.end].join(" - ")}

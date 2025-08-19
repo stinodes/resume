@@ -1,27 +1,7 @@
 import { createSignal, type Component } from "solid-js";
-import { history } from "./history";
+import { history, meta } from "./data";
 import { HistoryItem } from "./HistoryItem";
 import { TagsSelector } from "./TagsSelector";
-
-const meta = {
-  name: "Stijn Tytgat",
-  title: "Fullstack Developer",
-  location: "2800 Mechelen",
-  phone: "(+32) 476 90 11 49",
-  email: "stijn@stinodes.dev",
-  education: [
-    {
-      name: "Multimedia- & Communication Technology",
-      institution: "EHB",
-      period: "2013 - 2016",
-      type: "Bachelor's degree",
-    },
-  ],
-  languages: ["English", "Dutch"],
-  profile: `
-jHi, I'm Stijn Tytgat, a Fullstack Developer from the Netherlands. I'm currently working at Immoscoop, where I'm responsible for designing and implementing the frontend of the website. I'm also working on the backend of the website, which is written in Node.js and Express.js. I'm passionate about building user-friendly and intuitive interfaces, and I'm constantly learning new technologies to improve my skills.
-  `,
-};
 
 const App: Component = () => {
   const [selected, setSelected] = createSignal<string[]>([]);

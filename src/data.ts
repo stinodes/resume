@@ -12,6 +12,31 @@ const POSITIONS = {
   FULLSTACK: "Fullstack Developer",
 };
 
+export const meta = {
+  name: "Stijn Tytgat",
+  title: "Fullstack Developer",
+  location: "2800 Mechelen",
+  phone: "(+32) 476 90 11 49",
+  email: "stijn@stinodes.dev",
+  education: [
+    {
+      name: "Multimedia- & Communication Technology",
+      institution: "EHB",
+      period: "2013 - 2016",
+      type: "Bachelor's degree",
+    },
+  ],
+  languages: ["English", "Dutch"],
+  profile: `
+I am a fullstack developer with nearly 10 years of experience building 
+interactive and data-driven user interfaces and am specialized in 
+creating web applications using typescript in combination with react and many 
+more UI-libraries and frameworks.
+I have experience with many different stacks in various contexts, including
+IOT, AI and data visualization.
+  `,
+};
+
 export const history: HistoryItem[] = [
   {
     company: "Immoscoop",
@@ -19,9 +44,8 @@ export const history: HistoryItem[] = [
     start: "2024",
     end: "2025",
     description: `
-I worked on the frontend of the Immoscoop website, which was a platform for booking and 
-managing vacation packages. I was responsible for designing and implementing the user 
-interface, as well as implementing the backend functionality using Node.js and Express.js.
+Development of the Immoscoop website and its secondary applications, with great 
+focus on SEO and SSR together with a diverse team of designers and developers.
 `,
     tags: ["react", "nextjs", "typescript", "aws", "docker", "agile", "cicd"],
   },
@@ -31,9 +55,8 @@ interface, as well as implementing the backend functionality using Node.js and E
     start: "2024",
     end: "2025",
     description: `
-I worked on the backend of the Promogoten website, which was a platform for booking and 
-managing vacation packages. I was responsible for designing and implementing the backend 
-functionality using Node.js and Express.js. I also implemented the frontend using React.js.
+Designing and implementing internal tooling for managing tasks, clients and supporting workflows 
+for a business growth partner.
       `,
     tags: ["react", "retool", "typescript", "golang", "rest", "postgres"],
   },
@@ -43,9 +66,8 @@ functionality using Node.js and Express.js. I also implemented the frontend usin
     start: "2024",
     end: "2024",
     description: `
-I worked on the backend of the VMM website, which was a platform for booking and 
-managing vacation packages. I was responsible for designing and implementing the backend 
-functionality using Node.js and Express.js. I also implemented the frontend using React.js.
+Developing a new website powered by the open-source Plone CMS using
+React in its front-end Volto framework.
       `,
     tags: ["react", "volto", "plone", "typescript", "datavis"],
   },
@@ -55,9 +77,8 @@ functionality using Node.js and Express.js. I also implemented the frontend usin
     start: "2024",
     end: "2024",
     description: `
-I worked on the backend of the Brussels Airport website, which was a platform for booking and 
-managing vacation packages. I was responsible for designing and implementing the backend 
-functionality using Node.js and Express.js. I also implemented the frontend using React.js.
+Migrating an internal application for platformization, moving from in-house 
+cloud solutions to AWS.
       `,
     tags: ["aws", "vuejs", "typescript", "aws"],
   },
@@ -67,9 +88,7 @@ functionality using Node.js and Express.js. I also implemented the frontend usin
     start: "2023",
     end: "2024",
     description: `
-I worked on the frontend of the Vlaamse Overheid website, which was a platform for booking and 
-managing vacation packages. I was responsible for designing and implementing the user 
-interface, as well as implementing the backend functionality using Node.js and Express.js.
+Creating a set of data-visualization platforms, powered by Drupal and Gatsby.
       `,
     tags: ["react", "gatsby", "typescript", "datavis"],
   },
@@ -79,9 +98,7 @@ interface, as well as implementing the backend functionality using Node.js and E
     start: "2022",
     end: "2023",
     description: `
-I worked on the frontend of the Optios website, which was a platform for booking and 
-managing vacation packages. I was responsible for designing and implementing the user 
-interface, as well as implementing the backend functionality using Node.js and Express.js.
+Development of a booking and register application for hairdressers
       `,
     tags: ["react", "reactnative", "typescript", "docker"],
   },
@@ -95,7 +112,7 @@ I worked on the frontend of the Digitaal Vlaanderen website, which was a platfor
 managing vacation packages. I was responsible for designing and implementing the user 
 interface, as well as implementing the backend functionality using Node.js and Express.js.
       `,
-    tags: ["vuejs", "typescript", "csharp", "dotnetcore"],
+    tags: ["vuejs", "typescript"],
   },
   {
     company: "Nationale Loterij",
@@ -141,7 +158,6 @@ functionality using Node.js and Express.js. I also implemented the frontend usin
       "datavis",
       "iot",
       "android",
-      "ai",
     ],
   },
 ];

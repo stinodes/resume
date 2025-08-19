@@ -45,7 +45,7 @@ export const Tag = (props: {
 }) => {
   return (
     <li
-      class={`${props.selected ? "bg-slate-700" : "bg-slate-500"} text-slate-100 text-sm px-2 rounded-md cursor-pointer`}
+      class={`${props.selected ? "outline-4 outline-blue-400" : ""} bg-slate-900 text-slate-100 text-sm px-2 rounded-md cursor-pointer`}
       onClick={() => props.onSelect?.(props.tag, !props.selected)}
     >
       {tagTx(props.tag)}
